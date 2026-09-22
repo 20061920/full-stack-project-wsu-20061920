@@ -7,6 +7,11 @@
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
+  "pnpm": {
+    "overrides": {
+      "jsdom": "25.0.1"
+    }
+  },
   "devDependencies": {
     "prettier": "^3.4.2",
     "turbo": "^2.3.4",
