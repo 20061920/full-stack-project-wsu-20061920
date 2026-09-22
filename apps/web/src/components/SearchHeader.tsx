@@ -23,7 +23,7 @@ export function Search() {
 
     return (
         <header className="blog-header">
-            <Link href="/">FullStack Blog</Link>
+            <Link href="/" className="blog-brand">FullStack Blog</Link>
 
              <form className="blog-search-wrap" onSubmit={handleSearchSubmit}>
         <svg className="blog-search-icon" aria-hidden="true" viewBox="0 0 24 24">
