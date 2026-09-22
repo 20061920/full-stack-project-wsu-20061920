@@ -1,4 +1,4 @@
-# Full-Stack Blog
+<img width="1401" height="967" alt="image" src="https://github.com/user-attachments/assets/df9e2350-d749-4fa3-b03d-544d0d592494" /># Full-Stack Blog
 
 A Turborepo monorepo containing a public-facing blog and an admin CMS, both built with Next.js 15, Prisma, and PostgreSQL (Neon).
 
@@ -19,6 +19,9 @@ A public blog with:
 - View counter that increments on each visit
 - Dark/light theme toggle
 - Responsive layout
+<img width="1401" height="967" alt="image" src="https://github.com/user-attachments/assets/0654af45-feee-404e-a2a3-d38fbbdecb84" />
+
+
 
 ## Admin (`apps/admin`)
 
@@ -33,6 +36,7 @@ A CMS for managing blog posts:
 - Image preview for post thumbnails
 - Toggle active/inactive status inline
 - Logout
+![Uploading image.png…]()
 
 ## Tech Stack
 
