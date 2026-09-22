@@ -4,8 +4,8 @@ A Turborepo monorepo containing a public-facing blog and an admin CMS, both buil
 
 ## Live URLs
 
-- **Client (public blog):** [full-stack-project-wsu-20061920.vercel.app](https://full-stack-project-wsu-20061920.vercel.app/)
-- **Admin (CMS):** [full-stack-project-wsu-20061920-adm.vercel.app](https://full-stack-project-wsu-20061920-adm.vercel.app/)
+- **Client :** [full-stack-project-wsu-20061920.vercel.app](https://full-stack-project-wsu-20061920.vercel.app/)
+- **Admin :** [full-stack-project-wsu-20061920-adm.vercel.app](https://full-stack-project-wsu-20061920-adm.vercel.app/)
 
 ## Client (`apps/web`)
 
