@@ -21,7 +21,7 @@ export default async function ModifyPage({
   if (!post) {
     redirect("/");
   }
-
+// Create an initialPost object with the post data, converting the date to a string in "YYYY-MM-DD" format for the PostForm component.
   const initialPost = {
   id: post.id.toString(),
   title: post.title,
@@ -33,6 +33,6 @@ export default async function ModifyPage({
   date: post.date.toISOString().split("T")[0], // "YYYY-MM-DD" string, matching PostForm's Post.date
   active: post.active,
 };
-
+  // Render the PostForm component with the initialPost data and set isEdit to true, indicating that this is an edit form.
   return <PostForm initialPost={initialPost} isEdit={true} />;
 }

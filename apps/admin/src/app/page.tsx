@@ -5,7 +5,8 @@ import { LogoutButton } from "../components/LogoutButton";
 import styles from "./page.module.css";
 import Image from "next/image";
 
-
+// The AdminSearchParams type defines the structure of the search parameters that can be passed to the admin dashboard page. 
+// It includes optional properties for error messages, search queries, visibility filters, sorting options, and pagination.
 type AdminSearchParams = {
   error?: string;
   q?: string;
@@ -14,7 +15,7 @@ type AdminSearchParams = {
   sortDate?: string;
   page?: string;
 };
-
+// maximum posts per page for pagination
 const POSTS_PER_PAGE = 6;
 
 export default async function Home({
@@ -24,7 +25,7 @@ export default async function Home({
 }) {
   const params = searchParams ? await searchParams : {};
   const loggedIn = await isLoggedIn();
-
+// If the user is not logged in, render the login form with any error messages passed in the search parameters.
   if (!loggedIn) {
     return (
       <main className={styles.loginContainer}>
@@ -97,7 +98,7 @@ export default async function Home({
       }
 
       return 0;
-    });
+    }); 
 
   const requestedPage = Number.parseInt(params.page ?? "1", 10);
   const totalPages = Math.max(1, Math.ceil(filteredPosts.length / POSTS_PER_PAGE));

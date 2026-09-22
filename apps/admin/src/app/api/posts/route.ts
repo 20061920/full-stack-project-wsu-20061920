@@ -9,6 +9,7 @@ function slugify(value: string) {
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
 } 
+// The slugify function takes a string value and converts it into a URL-friendly slug. 
 
 function validatePost(data: Record<string, unknown>) {
   const title = String(data.title ?? "").trim();
@@ -17,6 +18,8 @@ function validatePost(data: Record<string, unknown>) {
   const tags = String(data.tags ?? "").trim();
   const imageUrl = String(data.imageUrl ?? "").trim();
   const category = String(data.category ?? "").trim();
+  
+  //trims white spaces and checks if any are empty and returns an error if any are empty
 
   if (!title || !description || !content || !tags || !imageUrl || !category) {
     return { error: "All post fields are required" };
