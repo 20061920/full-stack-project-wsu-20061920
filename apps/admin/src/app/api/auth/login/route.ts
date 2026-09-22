@@ -30,7 +30,6 @@ export async function POST(request: Request) {
   cookieStore.set("auth_token", createAuthToken(username), {
     httpOnly: true,
     sameSite: "strict", //anti-CSRF
-    // eslint-disable-next-line turbo/no-undeclared-env-vars
     secure: process.env.NODE_ENV === "production",
     path: "/",
     maxAge: 60 * 60, // 1hr
