@@ -7,13 +7,21 @@
     "E2E",
     "TEST_DATABASE_URL",
     "DATABASE_URL",
+    "JWT_SECRET",
+    "NODE_ENV"
+  ],
+  "globalPassThroughEnv": [
+    "ADMIN_USERNAME",
+    "PASSWORD",
+    "DATABASE_URL",
     "JWT_SECRET"
   ],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"],
+      "env": ["DATABASE_URL", "JWT_SECRET", "ADMIN_USERNAME", "PASSWORD"]
     },
     "lint": {
       "dependsOn": ["^lint"]
