@@ -7,7 +7,7 @@ A Turborepo monorepo containing a public-facing blog and an admin CMS, both buil
 - **Client :** [full-stack-project-wsu-20061920.vercel.app](https://full-stack-project-wsu-20061920.vercel.app/)
 - **Admin :** [full-stack-project-wsu-20061920-adm.vercel.app](https://full-stack-project-wsu-20061920-adm.vercel.app/)
 
-##Set up Environment
+## Set up Environment
 
 Create a .env file in the project root:
 
@@ -17,7 +17,7 @@ Create a .env file in the project root:
    JWT_SECRET=your-secret-here
    
 
-##Installing the project
+## Installing the project
 
 - pnpm install
 - nvm install 22
